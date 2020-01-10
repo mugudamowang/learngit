@@ -1,0 +1,14 @@
+
+map: wordplace-->stage--->master
+	*工作区里的文件add到stage
+		可使用git checkout -- filesname进行撤销操作
+		git reset -- filename撤销暂存区的修改
+		git reset HEAD filename撤销暂存区的修改并放回工作区
+		git status查看状态
+		cat filename查看文件详细信息
+		
+		
+	*最后commit到master库
+		git reset --hard HEAD^回退到HEAD^（^的个数为之前版本）
+		git log载入历史记录
+		git reflog载入版本号日志
