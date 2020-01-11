@@ -6,3 +6,28 @@ git push -u origin master第一次推送master分支的所有内容；
 
 此后，每次本地提交后，只要有必要，就可以使用命令
 git push origin master推送最新修改；
+
+创建git分支
+	git checkout -b dev 创建并切换到dev
+	git branch dev 创建分支dev
+	git checkout dev 切换分支dev
+	git branch 查看当前分支
+	
+	工作原理：
+		1，每次提交，分支向前移动一步
+					mater
+					  ↓
+			O----O----O
+		2，新建的dev为一个指针指向与master相同的提交
+					mater
+					  ↓
+			O----O----O
+					  ↑
+					 dev
+		3，改变指针HEAD指向dev，再次提交时只会在dev分支上修改，master不变
+					mater
+					  ↓
+			O----O----O-----O
+							↑
+							dev
+		4，完成dev后直接合并，HEAD重新指向master，dev可以删除
