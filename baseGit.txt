@@ -15,3 +15,5 @@ map: wordplace-->stage--->master
 	*查看分支下所跟踪的文件列表
 		git ls-files
 		ll 查看当前目录下的全部文件列表
+	*在git时遇到fatal进程在运行或崩溃时使用：
+		rm .git/index.lock删除文件后再提交即可
