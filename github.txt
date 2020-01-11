@@ -8,10 +8,13 @@ git push -u origin master第一次推送master分支的所有内容；
 git push origin master推送最新修改；
 
 创建git分支
-	git checkout -b dev 创建并切换到dev
+	git checkout/switch -b/-c dev 创建并切换到dev
 	git branch dev 创建分支dev
 	git checkout dev 切换分支dev
 	git branch 查看当前分支
+	git merge 合并某分支到当前分支
+	git branch -d dev 删除dev分支
+	
 	
 	工作原理：
 		1，每次提交，分支向前移动一步
