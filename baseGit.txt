@@ -12,3 +12,6 @@ map: wordplace-->stage--->master
 		git reset --hard HEAD^回退到HEAD^（^的个数为之前版本）
 		git log载入历史记录
 		git reflog载入版本号日志
+	*查看分支下所跟踪的文件列表
+		git ls-files
+		ll 查看当前目录下的全部文件列表
